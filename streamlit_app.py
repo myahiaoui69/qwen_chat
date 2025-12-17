@@ -5,9 +5,7 @@ from PIL import Image
 import io
 import json
 import os
-from dotenv import load_dotenv
 
-load_dotenv()  # charge le .env
 
 # -------------------------------
 # Config
