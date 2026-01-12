@@ -59,8 +59,8 @@ def stream_chat_completion(payload):
 # -------------------------------
 st.set_page_config(page_title="Vision LLM Demo", page_icon="🤖")
 st.title("🤖 Vision LLM – Hugging Face")
-context_streamlit = st.context.cookies
-st.write(context_streamlit)
+info_client = st.context.cookies
+st.write("Info de l'utilisateur :", info_client)
 question = st.text_input("Pose ta question", placeholder="What is this equipment and what is it used for?")
 uploaded_file = st.file_uploader("Upload une image", type=["jpg", "jpeg", "png"], accept_multiple_files=False)
 
